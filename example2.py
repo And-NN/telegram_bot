@@ -1,11 +1,10 @@
 import telebot  # pip install pytelegrambotapi
 from collections import defaultdict
 
+# Бот для публикации объявлений
 # @significante_bot
 token = '1613285667:AAHYfDwP1KfrJQytNssbHVY74oguqBrp1oA'
 bot = telebot.TeleBot(token)
-
-# Бот для публикации объвлений
 START, TITLE, PRICE, CONFIRMATION = range(4)  # состояния
 USER_STATE = defaultdict(lambda: START)
 PRODUCTS = defaultdict(lambda: {})
